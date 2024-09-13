@@ -1,0 +1,13 @@
+# Ignore compiled files
+*.pyc
+__pycache__/
+
+
+# Ignore specific directories
+/mp3s/
+/mp3s_chunked/
+/1200_unconditional_EDM/
+/1200_unconditional_EDM_test_loss/
+/results/
+
+# Ignore specific files

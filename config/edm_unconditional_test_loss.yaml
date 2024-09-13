@@ -1,0 +1,33 @@
+# model params
+diffusion:
+  sigma_data: 0.5
+  p_mean: -1.2
+  p_std: 1.2
+  sigma_min: 0.002
+  sigma_max: 80
+  rho: 7
+
+# training params
+n_epoch: 1200
+global_batch_size: 128
+global_seed: 1334
+learning_rate: 1.0e-4
+warm_epoch: 200
+load_epoch: -1
+flip: True
+ema: 0.9993
+num_workers: 8
+log_every: 100
+
+# testing params
+n_sample: 8
+save_dir: './1200_unconditional_EDM_test_loss'
+save_model: True
+
+# Sampling
+steps: 18
+sampling_batch_size: 1
+epoch_checkpoint: 100
+
+# data
+data_dir: mp3s_chunked
